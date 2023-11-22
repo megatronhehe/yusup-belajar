@@ -14,27 +14,33 @@ export default function Navbar({ setToggleNavbar }) {
 				>
 					Navbar
 				</NavLink>
-				<ul className="flex invisible gap-6 ml-auto sm:visible">
-					<li>
+				<ul className="flex invisible ml-auto sm:visible">
+					<li className="flex justify-end w-20">
 						<NavLink
 							to="/"
-							className={({ isActive }) => (isActive ? "font-semibold" : "")}
+							className={({ isActive }) =>
+								`duration-200 ${isActive ? "font-semibold tracking-wide" : ""}`
+							}
 						>
 							Home
 						</NavLink>
 					</li>
-					<li>
+					<li className="flex justify-end w-20">
 						<NavLink
 							to="/about"
-							className={({ isActive }) => (isActive ? "font-semibold" : "")}
+							className={({ isActive }) =>
+								`duration-200 ${isActive ? "font-semibold tracking-wide" : ""}`
+							}
 						>
 							About
 						</NavLink>
 					</li>
-					<li>
+					<li className="flex justify-end w-20">
 						<NavLink
 							to="/contact"
-							className={({ isActive }) => (isActive ? "font-semibold" : "")}
+							className={({ isActive }) =>
+								`duration-200 ${isActive ? "font-semibold tracking-wide" : ""}`
+							}
 						>
 							Contact
 						</NavLink>
