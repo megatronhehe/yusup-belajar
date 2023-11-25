@@ -36,6 +36,12 @@ export default function NavbarPopup({ setToggleNavbar }) {
 				>
 					Contact
 				</NavLink>
+				<NavLink
+					to="/crud"
+					className="px-6 py-4 duration-200 hover:bg-black hover:text-white rounded-xl"
+				>
+					CRUD
+				</NavLink>
 			</ul>
 		</nav>
 	);

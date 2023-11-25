@@ -45,6 +45,16 @@ export default function Navbar({ setToggleNavbar }) {
 							Contact
 						</NavLink>
 					</li>
+					<li className="flex justify-end w-20">
+						<NavLink
+							to="/crud"
+							className={({ isActive }) =>
+								`duration-200 ${isActive ? "font-semibold tracking-wide" : ""}`
+							}
+						>
+							CRUD
+						</NavLink>
+					</li>
 				</ul>
 
 				<button onClick={() => setToggleNavbar(true)} className="sm:invisible">
